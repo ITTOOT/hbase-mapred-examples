@@ -14,28 +14,33 @@
         <maven.compiler.target>18</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
+    <!-- file:///C:/cygwin64/HBase/hbase-1.7.2/lib -->
     <repositories>
-        <repository>
-            <id>apache</id>
-            <url>http://maven.apache.org</url>
-        </repository>
+        <!-- <repository>
+             <id>apache</id>
+             <url>http://maven.apache.org</url>
+         </repository> -->
         <repository>
             <id>hbase-local</id>
             <name>Local HBase</name>
-            <url>file://C:/cygwin64/HBase/hbase-1.7.2/lib</url>
+            <url>file:///C:/cygwin64/HBase/hbase-1.7.2/lib</url>
             <layout>default</layout>
         </repository>
     </repositories>
 
-    <!-- https://myrepository.com/artifact/org.apache.hbase/hbase-client -->
-    <dependencies>
-        <dependency>
-            <groupId>org.apache.hbase</groupId>
-            <artifactId>hbase-client</artifactId>
-            <version>1.7.2</version>
-        </dependency>
-
+   <dependencies>
+       <!-- https://myrepository.com/artifact/org.apache.hbase/hbase-client -->
+       <dependency>
+           <groupId>org.apache.hbase</groupId>
+           <artifactId>hbase-client</artifactId>
+           <version>1.7.2</version>
+       </dependency>
+       <!-- https://mvnrepository.com/artifact/org.apache.hadoop/hadoop-mapreduce-client-core -->
+       <dependency>
+           <groupId>org.apache.hadoop</groupId>
+           <artifactId>hadoop-mapreduce-client-core</artifactId>
+           <version>3.2.2</version>
+       </dependency>
         <!-- https://myrepository.com/artifact/org.apache.hadoop/hadoop-common -->
         <dependency>
             <groupId>org.apache.hadoop</groupId>
@@ -45,8 +50,7 @@
         <dependency>
             <groupId>org.apache.hbase</groupId>
             <artifactId>hbase-server</artifactId>
-            <version>1.7.2</version>
+            <version>1.2.4</version>
         </dependency>
     </dependencies>
-
 </project>

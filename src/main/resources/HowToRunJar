@@ -31,6 +31,10 @@ Note: MapReduce job will look for the classes (jars) in the locations specified 
 > export PATH=$PATH:C:/hadoop-1.7.2/sbin
 > $HADOOP_CLASSPATH=`${HBASE_HOME}/bin/hbase mapredcp`:${HBASE_HOME}/conf hadoop jar hbase-examples.jar mapreduce.Main -libjars $(${HBASE_HOME}/ bin/hbase mapredcp | tr ':' ',')
 
+> C:\cygwin64\HBase\hbase-1.7.2\lib
+> cd lib
+> hadoop jar hbase-mapred-examples.jar Z:/On-Board Repo/Code/Java/hbase-mapred-examples/out/artifacts/hbase_mapred_examples_jar
+
 * Building with Maven needs the JAR's packaging explicitly using -libjars
 
 > count 'summary'

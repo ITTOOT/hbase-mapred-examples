@@ -15,7 +15,7 @@ public class Main {
         // Base for all Hadoop ecosystem config objects
         Configuration config = HBaseConfiguration.create();
         // Needs to know which archive holds mapper and reducer classes
-        Job job = Job.getInstance(config, "summary");
+        Job job = Job.getInstance(config);
         job.setJarByClass(Main.class); // Archive that holds Main, also holds Mapper & Reducer
         // Tables
         String sourceTable = "census";
